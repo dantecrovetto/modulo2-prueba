@@ -18,7 +18,7 @@ end
 def build_web_page(data)
     html = "<html>\n<head>\n</head>\n<body>\n<ul>\n"
     data['photos'].size.times do |i|
-        puts data['photos'][i]['img_src']
+        data['photos'][i]['img_src']
         html += "\t<li><img src=\"#{data['photos'][i]['img_src']}\"></li>\n"
     end
     html += "<ul>\n</body>\n</html>"
